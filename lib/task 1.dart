@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_1/task%203.dart';
+import 'package:flutter_1/task2.dart';
 
 class Task_1 extends StatelessWidget {
   @override
@@ -43,6 +45,10 @@ class Task_1 extends StatelessWidget {
                 ),
               ),
             ),
+            ElevatedButton(onPressed: () {
+              Navigator.of(context).pushNamed('routetask3');
+              //Navigator.of(context).push(MaterialPageRoute(builder: (_) => Task_3(),));
+            }, child: Text('Go To Task_3'))
           ],
           mainAxisAlignment: MainAxisAlignment.start,
         ),

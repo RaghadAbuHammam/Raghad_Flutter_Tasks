@@ -24,7 +24,7 @@ color: Colors.white,
 ),
 SizedBox(
 //width: 50,
-height: 100,
+height: 50,
 ),
 Row(
   mainAxisAlignment: MainAxisAlignment.center,
@@ -196,13 +196,21 @@ children: [
       )
   ),
   SizedBox(
-    width: 70,
+    width: 50,
   ),
   Icon(Icons.dialpad ,
   color: Colors.white
-  )
+  ),
 ],
-)
+),
+  ElevatedButton(onPressed: () {
+    Navigator.of(context).pushNamed('routetask1');
+  }, child: Text('Go Back To Task 1')
+  ),
+  ElevatedButton(onPressed: () {
+    Navigator.of(context).pushNamed('routetask3');
+  }, child: Text('Back To Task 3')
+  )
 ],
 )
 ),

@@ -46,7 +46,7 @@ class Task_3 extends StatelessWidget {
                 child: Row(
                   children: [
                   SizedBox(
-                  height: 240,
+                  height: 200,
                   ),
                     Text('CALLING...',
                     style: TextStyle(
@@ -83,7 +83,7 @@ class Task_3 extends StatelessWidget {
               Row(
                 children: [
                   SizedBox(
-                    height: 90),
+                    height: 10),
                   Padding(
                     padding: const EdgeInsets.only(left: 135),
                     child: Text('Send Massage',
@@ -93,7 +93,18 @@ class Task_3 extends StatelessWidget {
                     ),),
                   )
                 ],
-              )
+              ),
+              ElevatedButton(onPressed: () {
+                Navigator.of(context).pushNamed('routetask4');
+                //Navigator.pop(context);
+              }, child: Text('Go to Task_4')
+              ),
+              ElevatedButton(onPressed: () {
+                Navigator.of(context).pushNamed('routetask1');
+                //Navigator.pop(context);
+              }, child: Text('Back to Task_1')
+              ),
+
           ],
                 ),
         ),
