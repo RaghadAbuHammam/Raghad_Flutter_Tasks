@@ -1,6 +1,7 @@
 //import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_1/task%201.dart';
+import 'package:flutter_1/task%202.dart';
 //import 'package:flutter_1/task%202.dart';
 import 'package:flutter_1/task%203.dart';
 import 'package:flutter_1/task%204.dart';
@@ -16,9 +17,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Task_1(),
         routes: {
-        'routetask3':(context)=>Task_3(),
+          'routetask1':(context)=>Task_1(),
+          'routetask2':(context)=>Task_2(),
+          'routetask3':(context)=>Task_3(),
           'routetask4':(context)=>Task_4(),
-          'routetask1':(context)=>Task_1()
         },
         debugShowCheckedModeBanner:false
     );

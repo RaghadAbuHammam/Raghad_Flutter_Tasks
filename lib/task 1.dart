@@ -45,9 +45,18 @@ class Task_1 extends StatelessWidget {
               ),
             ),
             ElevatedButton(onPressed: () {
-              Navigator.of(context).pushNamed('routetask3');
+              Navigator.of(context).pushNamed('routetask2');
               //Navigator.of(context).push(MaterialPageRoute(builder: (_) => Task_3(),));
-            }, child: Text('Go To Task_3'))
+            }, child: Text('Go To Task 2')
+            ),
+            ElevatedButton(onPressed: () {
+              Navigator.of(context).pushNamed('routetask3');
+            }, child: Text('Go to Task 3')
+            ),
+            ElevatedButton(onPressed: () {
+              Navigator.of(context).pushNamed('routetask4');
+            }, child: Text('Go to Task 4')
+            )
           ],
           mainAxisAlignment: MainAxisAlignment.start,
         ),

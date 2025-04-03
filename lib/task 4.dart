@@ -8,7 +8,7 @@ class Task_4 extends StatelessWidget {
     body: SafeArea(child: Column(
 children: [
 Padding(
-  padding: const EdgeInsets.only(top: 60),
+  padding: const EdgeInsets.only(top: 50),
   child: Text('Sister',
   style: TextStyle(
     fontSize: 30,
@@ -173,7 +173,7 @@ Row(
   ],
 ),
 SizedBox(
-height: 80,
+height: 40,
 ),
 Row(
   mainAxisAlignment: MainAxisAlignment.center,
@@ -205,7 +205,11 @@ children: [
 ),
   ElevatedButton(onPressed: () {
     Navigator.of(context).pushNamed('routetask1');
-  }, child: Text('Go Back To Task 1')
+  }, child: Text('Back To Task 1')
+  ),
+  ElevatedButton(onPressed: () {
+    Navigator.of(context).pushNamed('routetask2');
+  }, child: Text('Back to Task 2')
   ),
   ElevatedButton(onPressed: () {
     Navigator.of(context).pushNamed('routetask3');
