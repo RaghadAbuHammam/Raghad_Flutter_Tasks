@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_1/task%203.dart';
-import 'package:flutter_1/task2.dart';
+import 'package:flutter_1/task 2.dart';
 
 class Task_1 extends StatelessWidget {
   @override
