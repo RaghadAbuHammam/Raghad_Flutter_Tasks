@@ -1,4 +1,4 @@
-/*
+
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 
@@ -27,7 +27,7 @@ class _Task_9State extends State<Task_9> {
             children: [
               //FormClass(labl: 'E_mai', hint: 'ex@domain.com', preIcon: Icons.mail),
               //FormClass(labl: 'PassWord', hint: '*****', preIcon: Icons.password,postIcon: Icons.remove_red_eye_outlined,),
-              //Lottie.network('https://lottie.host/dfbfdbc6-1596-45e1-8cff-9198c4abed5a/CORHgHPE1z.json'),
+              Lottie.network('https://lottie.host/e81b50e5-ca0f-4763-8480-fd0fe75f44ac/kCVMfREZ2C.json'),
               TextFormField(
                 validator: (value) {
                   if(value!.length<8){
@@ -141,4 +141,4 @@ class FormClass extends StatelessWidget {
     );
   }
 }
-*/
+
