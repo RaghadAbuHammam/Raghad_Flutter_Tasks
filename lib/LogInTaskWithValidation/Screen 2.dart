@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_1/LogInTaskWithValidation/Screen%203.dart';
 import 'package:lottie/lottie.dart';
 
 class Screen_2 extends StatefulWidget {
@@ -108,6 +109,7 @@ class _Screen_2State extends State<Screen_2> {
                   Padding(
                     padding: const EdgeInsets.only(right: 10,left: 10),
                     child: TextFormField(
+                      obscureText: true,
                       validator: (value) {
                         if(value!.length<8){
                           return 'must be length greater than 8';
@@ -150,7 +152,7 @@ class _Screen_2State extends State<Screen_2> {
                   ],
                 ),
               ),
-              /*
+
               Padding(
                 padding: const EdgeInsets.only(left: 20,right: 20),
                 child: Container(
@@ -158,8 +160,11 @@ class _Screen_2State extends State<Screen_2> {
                   child: ElevatedButton(onPressed: () {
                     if(FK.currentState!.validate()){
                       Navigator.of(context).push(
-                        MaterialPageRoute(builder: (context)) => Screen_3(c1.text)
+                        MaterialPageRoute(builder: (context)=> Screen_3(e: c1.text))
                       );
+                      // Navigator.of(context).push(
+                      //   //MaterialPageRoute(builder: (context)) => Screen_3(c1.text)
+                      // );
                       //Navigator.of(context).pushNamed('routescreen3',arguments: c1.text);
                     }
                   }, child: Text('Register',style: TextStyle(
@@ -171,7 +176,7 @@ class _Screen_2State extends State<Screen_2> {
                   ),
                 ),
               ),
-               */
+
               Padding(
                 padding: const EdgeInsets.only(left: 100),
                 child: Row(
